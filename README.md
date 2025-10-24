@@ -1,6 +1,6 @@
 # 🏎️ Velocé Racing Website
 
-A lightweight and professional **HTML-only** website for **Velocé Racing**, an Indian motorsport and performance engineering brand.  
+A lightweight and professional **HTML-only** website for **Velocé Racing**, a Formula Student team who compete in the largest Engineering Design Competition in India.  
 This site showcases the team’s expertise in automotive engineering, innovation, and racing excellence — built using **pure HTML (no CSS or JavaScript)** to emphasize simplicity and structure.
 
 ---
