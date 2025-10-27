@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Velocé Racing</title>
-    <meta name="description" content="Velocé Racing – Indian motorsport brand specializing in high-performance vehicles and racing innovation.">
+    <meta name="description" content="Velocé Racing">
     <meta name="author" content="Velocé Racing">
 </head>
 
 <body bgcolor="black" text="white" link="red" vlink="orange" alink="yellow">
-
     <center>
-        <img src="assets/velocelogo.jpg" alt="Velocé Racing Logo" width="100" height="100">
+    <center>
+        <img src="assets/velocelogo.jpg" alt="Velocé Racing Logo" width="120" height="120">
         <h1>Velocé Racing</h1>
         <p>Engineering Performance. Redefining Speed.</p>
     </center>
@@ -19,9 +19,9 @@
     <hr color="white">
 
     <center>
-        <a href="#about_us">About</a> |
-        <a href="#our_services">Expertise</a> |
-        <a href="#contact_form">Contact</a> |
+        <a href="garage.html">Garage</a> |
+        <a href="subsystems.html">Subsystems</a> |
+        <a href="achievements.html">Achievements</a> |
         <a href="https://www.facebook.com/TeamVeloce/" target="_blank">Facebook</a> |
         <a href="https://www.instagram.com/veloce_racing_india/" target="_blank">Instagram</a> |
         <a href="https://www.linkedin.com/company/team-veloce-racing/posts/?feedView=all" target="_blank">LinkedIn</a> |
@@ -34,51 +34,89 @@
     <p><font color="white">Veloce Racing is a Formula Student team who compete in the largest Engineering Design Competition in India.</font></p>
 
     <h2 id="our_services">Our Expertise</h2>
-    <ul>
-        <li><b>Performance Engineering</b> – Engine tuning, exhausts, aerodynamics, suspension</li>
-        <li><b>Motorsport Development</b> – Track builds, data testing, driver training</li>
-        <li><b>Research & Innovation</b> – EV tech, lightweight design, AI-assisted tuning</li>
-        <li><b>Team & Collaboration</b> – Internships, partnerships, outreach</li>
-    </ul>
+        <p><b>Performance Engineering</b>  Engine tuning, exhausts, aerodynamics, suspension</p>
+        <p><b>Motorsport Development</b>  Track builds, data testing, driver training</p>
+        <p><b>Research & Innovation</b>  EV tech, lightweight design, AI-assisted tuning</p>
+        <p><b>Team & Collaboration</b>  Internships, partnerships, outreach</p>
 
     <center>
-        <img src="assets/valocegarage.jpg" alt="Velocé Garage" width="400">
+        <a href="garage.html"><img src="assets/valocegarage.jpg" alt="Velocé Garage" width="400"></a>
         <p><b>Precision. Passion. Performance.</b></p>
-        <h2>Achievements</h2>
     </center>
 
     <h2>FAQs</h2>
-    <ul>
-        <li><b>Do you build track cars?</b> Yes, we design and develop track-spec vehicles built for performance and safety.</li>
-        <li><b>Can I get a performance tune for my street car?</b> Absolutely. We offer ECU remapping and hardware upgrades.</li>
-        <li><b>Where is Velocé Racing based?</b> Pune, India.</li>
-        <li><b>Do you sponsor racers or student teams?</b> Yes, through technical partnerships and sponsorship programs.</li>
-    </ul>
+        <p><b>Do you build track cars?</b> Yes, we design and develop track-spec vehicles built for performance and safety.</p>
+        <p><b>Can I get a performance tune for my street car?</b> Absolutely. We offer ECU remapping and hardware upgrades.</p>
+        <p><b>Where is Velocé Racing based?</b> Pune, India.</p>
+        <p><b>Do you sponsor racers or student teams?</b> Yes, through technical partnerships and sponsorship programs.</p>
 
     <h2>Testimonials</h2>
     <p><i>"Velocé transformed my car into a beast on the track. Their engineering precision is unmatched."</i></p>
     <p>– Arjun Menon, GT Racer</p>
 
     <h2 id="contact_form">Contact Us</h2>
-    <form action="https://formspree.io/f/mwkyrblq" method="POST">
-        <p><input name="name" type="text" placeholder="Full Name"></p>
-        <p><input name="_replyto" type="email" placeholder="Email"></p>
-        <p><input name="tel" type="tel" placeholder="Phone Number"></p>
-        <p><textarea name="message" rows="5" cols="30" placeholder="Your Message"></textarea></p>
-        <p><button type="submit">Submit</button></p>
-    </form>
+    <form action="#" method="post" novalidate>
+    
+    <!-- NAME -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Name cannot contain numbers or special characters" required>
+    <br><br>
 
-    <center>
-        <img src="assets/veloce-workshop.webp" alt="Velocé Workshop" width="400">
-    </center>
+    <!-- BRANCH -->
+    <label for="branch">Branch:</label><br>
+    <select id="branch" name="branch" required>
+      <option value="">-- Select your branch --</option>
+      <option value="Chemical Engineering">Chemical Engineering</option>
+      <option value="Computer Engineering">Computer Engineering</option>
+      <option value="Electronics & Telecommunication Engineering">Electronics & Telecommunication Engineering</option>
+      <option value="Engineering Science & Humanities">Engineering Science & Humanities</option>
+      <option value="Instrumentation">Instrumentation</option>
+      <option value="Information Technology">Information Technology</option>
+      <option value="Mechanical Engineering">Mechanical Engineering</option>
+      <option value="AI & Data Science">AI & Data Science</option>
+      <option value="Computer Science and Engineering (AI)">Computer Science and Engineering (AI)</option>
+      <option value="Computer Science and Engineering (AI & ML)">Computer Science and Engineering (AI & ML)</option>
+      <option value="Multidisciplinary Engineering">Multidisciplinary Engineering</option>
+      <option value="Computer Engineering (Software Engineering)">Computer Engineering (Software Engineering)</option>
+      <option value="Civil Engineering">Civil Engineering</option>
+    </select>
+    <br><br>
+
+    <!-- DIVISION -->
+    <label for="division">Division:</label><br>
+    <input type="text" id="division" name="division" pattern="[A-Za-z]{1}" title="Enter only one alphabet" required>
+    <br><br>
+
+    <!-- PRN NUMBER -->
+    <label for="prn">PRN Number:</label><br>
+    <input type="text" id="prn" name="prn" pattern="[0-9]+" title="PRN number must contain only numbers" required>
+    <br><br>
+
+    <!-- PHONE NUMBER -->
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" title="Phone number must be 10 digits" required>
+    <br><br>
+
+    <!-- COLLEGE ID -->
+    <label for="email">College ID (Email):</label><br>
+    <input type="email" id="email" name="email" placeholder="name.PRNnumber@vit.edu" required>
+    <br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
 
     <hr color="white">
 
     <center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7568.873975523702!2d73.868695!3d18.463855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb337244e7e9%3A0x463a0f96ee646770!2sVeloce%20Racing%20India!5e0!3m2!1sen!2sin!4v1761475555707!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+        </iframe>
         <p>666, Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037</p>
         <p>Mon–Sat: 10 AM – 7 PM | Sunday: Closed</p>
         <p>Email: <a href="mailto:teamveloceracing@gmail.com">teamveloceracing@gmail.com</a></p>
         <p>© 2025 Velocé Racing</p>
+    </center>
     </center>
 
 </body>
